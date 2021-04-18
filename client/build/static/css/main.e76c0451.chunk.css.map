@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,QACE,cACF,CACA,WACE,gBACF,CACA,SACE,gBACF,CACA,UACE,gBACF","file":"main.e76c0451.chunk.css","sourcesContent":[".navbar {\n  font-size: 2rem;\n}\n.minHeight {\n  min-height: 100vh;\n}\n.heading {\n  font-size: 1.5rem;\n}\n.heading1 {\n  font-size: 1.3rem;\n}\n"]}
