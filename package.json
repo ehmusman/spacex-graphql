@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "cd server && nodemon server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && cd client && npm install && npm run build"
+    "server": "cd server && nodemon server.js"
   },
   "engines": {
     "node": "14.16.1"
