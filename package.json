@@ -1,0 +1,11 @@
+{
+  "name": "spacex-graphql",
+  "version": "1.0.0",
+  "description": "spacex api is integrated with graphql at backend and react with apollo at frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
