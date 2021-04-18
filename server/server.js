@@ -15,9 +15,9 @@ app.use('/graphql', graphqlHTTP({
 }))
 if (process.env.NODE_ENV === 'production') {
     console.log("production mode")
-    app.use(express.static(path.resolve(process.cwd(), 'frontend/build')))
+    app.use(express.static(path.resolve(process.cwd(), 'client/build')))
     app.get('*', (req, res) => {
-        res.sendFile(path.resolve(process.cwd(), 'frontend/build/index.html'))
+        res.sendFile(path.resolve(process.cwd(), 'client/build/index.html'))
     })
 } else {
     app.get("/", (req, res) => {
