@@ -2,10 +2,10 @@
   "name": "spacex-graphql",
   "version": "1.0.0",
   "description": "spacex api is integrated with graphql at backend and react with apollo at frontend",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "cd server && node server.js",
+    "start": "node server/server",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && cd client && npm install && npm run build"
   },
   "engines": {
