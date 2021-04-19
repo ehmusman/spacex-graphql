@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 const Launch = ({ id, date, success, name, img, detail }) => {
     const height = {
         width: "100%",
-        height: "15vw",
+        height: "25vw",
         objectFit: "cover"
     }
     return (
