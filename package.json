@@ -4,8 +4,7 @@
   "description": "spacex api is integrated with graphql at backend and react with apollo at frontend",
   "main": "server.js",
   "scripts": {
-    "start": "node server/server",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false && cd client && npm install && npm run build"
+    "start": "node server/server"
   },
   "engines": {
     "node": "14.16.1"
