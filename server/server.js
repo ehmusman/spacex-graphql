@@ -9,15 +9,22 @@ app.use(cors())
 const path = require("path")
 
 
+if (process.env.NODE_ENV === 'production') {
+    console.log("production mode")
+    app.use(express.static(path.resolve(process.cwd(), 'client/build')))
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(process.cwd(), 'client/build/index.html'))
+    })
+} else {
+    app.get("/", (req, res) => {
+        res.send("Api is Running")
+    })
+}
 app.use('/graphql', graphqlHTTP({
     schema,
     graphiql: true
 }))
-app.use(express.static("public"))
 
-app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../public/index.html'))
-})
 
 
 const port = process.env.PORT || 5000
